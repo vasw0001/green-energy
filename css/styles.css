@@ -82,10 +82,6 @@ header {
 
 
 #tag-line {
-    -webkit-mask-image: url(https://dl.dropbox.com/s/u92nd5fpuatesd0/mask.png?dl=0);
-    -o-mask-image: url(https://dl.dropbox.com/s/u92nd5fpuatesd0/mask.png?dl=0);
-    -moz-mask-image: url(https://dl.dropbox.com/s/u92nd5fpuatesd0/mask.png?dl=0);
-    mask-image: url(https://dl.dropbox.com/s/u92nd5fpuatesd0/mask.png?dl=0);
     color: #02104D;
     text-align: center;
 }
