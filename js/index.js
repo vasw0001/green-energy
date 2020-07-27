@@ -1,9 +1,9 @@
 
 
 
-const btns = document.querySelectorAll('.controls button'); // event target object
+const btns = document.querySelectorAll('.btncontrols button'); // event target object
 
-const newContent = document.querySelector('.new-content');
+const newContent = document.querySelector('.js-content');
 
 
 
@@ -11,10 +11,10 @@ function addContent(ev){
     
     let clickedButton = ev.target;
     
-    for(let btn of btns){
-        if(btn.hasAttribute('id')){
+    for(let bc of btns){
+        if(bc.hasAttribute('id')){
             
-            btn.removeAttribute('id');
+            bc.removeAttribute('id');
         }
     }
    
@@ -52,6 +52,6 @@ function addContent(ev){
 }
 
 
-for(let btn of btns){
-  btn.addEventListener('click', addContent);
+for(let bc of btns){
+  bc.addEventListener('click', addContent);
 }
