@@ -81,7 +81,7 @@ header {
 }
 
 
-#tag-line {
+h1 {
     color: #02104D;
     text-align: center;
 }
