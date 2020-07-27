@@ -1,0 +1,292 @@
+/************
+COLORS USED:
+#03538B
+#D6EAF8
+
+********/
+
+/********** import font pair for body and heading  *************************************************/
+
+/*
+font-family: 'Cardo', serif;
+font-family: 'Josefin Sans', sans-serif;
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Cardo&family=Josefin+Sans:wght@200&display=swap');
+
+/***************************************************************************************************/
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/************
+DEFAULT STYLE
+*************/
+
+* {
+    box-sizing: border-box;     
+}
+
+
+body {
+    font-family: 'Josefin Sans', sans-serif;   
+    font-size: 0.75rem;
+    margin: 0 auto; 
+    line-height: 1.5;
+           
+}
+
+h1{
+    
+    font-family: 'Cardo', serif;
+    line-height: 1.5;
+    
+}
+
+h4{
+    font-family: 'Cardo', serif;
+    font-size:1.5rem;    
+}
+
+/*box class used in all the divs*/
+
+.bg-header .box,
+.bg-footer .box {
+    padding: 2rem 2rem;
+}
+
+.bg-main-content .box {
+    margin: 2rem;
+    padding: 0.5rem;
+    color: #666;
+    text-align: left;
+}
+
+/* header styles*/
+header {
+    font-size: 1rem;   
+}
+
+
+.bg-header {
+    background-image: url(../img/bg-header.png);
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-color: #03538B;
+    background-blend-mode: screen;
+}
+
+
+#tag-line {
+    -webkit-mask-image: url(https://dl.dropbox.com/s/u92nd5fpuatesd0/mask.png?dl=0);
+    -o-mask-image: url(https://dl.dropbox.com/s/u92nd5fpuatesd0/mask.png?dl=0);
+    -moz-mask-image: url(https://dl.dropbox.com/s/u92nd5fpuatesd0/mask.png?dl=0);
+    mask-image: url(https://dl.dropbox.com/s/u92nd5fpuatesd0/mask.png?dl=0);
+    color: #02104D;
+    text-align: center;
+}
+
+
+/*nav bar styles */
+.bg-nav ul{    
+    list-style: none;
+    padding: 0;
+    margin:2rem;
+}
+
+.bg-nav li
+{
+    padding-bottom: 1rem;
+}
+
+.bg-nav ul a:link{    
+    text-decoration: none;
+    color:#4287f5;
+    
+}
+
+.bg-nav ul a:visited{   
+    color:#393c40;   
+}
+
+.bg-nav ul a:hover{   
+    color:#4287f5;    
+}
+
+  ul
+    { 
+        padding: 0;
+    }
+
+
+
+/*main content styles */
+
+#active{
+    
+    background-color: #393c40;
+    border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+    
+    font-family: 'Josefin Sans', sans-serif; 
+    
+}
+
+
+
+.controls{    
+    padding:2.5rem;   
+}
+
+.btn{
+    background-color: #03538B; 
+    border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+    width: 7rem;
+    font-family: 'Josefin Sans', sans-serif; 
+}
+
+.new-content{    
+    display: flex;
+    flex-direction: column;
+        
+}
+
+.new-content p
+{
+    margin: 2rem;
+    padding: 0.5rem;
+    text-align: justify;
+}
+
+.new-content img
+    {
+        width: 100%;
+        text-align: center;
+        
+    }
+
+.rule
+{
+    margin-left:2rem;
+    margin-right: 2rem;
+}
+
+
+
+
+/*footer styles */
+.bg-footer{ 
+    font-family: 'Cardo', serif;
+    display: grid;
+    grid-template-rows: auto auto;
+    overflow: hidden;
+    background-color: white;
+    text-align: left;   
+    margin:2rem;
+    
+}
+
+.bg-footer ul{    
+    list-style: none;    
+}
+
+.bg-footer ul li{    
+    display: inline;
+    padding-right: 2.5rem;
+    
+    
+}
+
+
+/* media query */
+
+
+@media screen and (min-width: 40rem) {
+    
+    
+    #tag-line {        
+        font-size: 4rem;
+    }
+
+    body {        
+        font-size: 1rem;
+        
+    }
+    
+    .bg-nav ul{        
+ 
+        margin: 2rem;       
+    }
+      
+    ul
+    { 
+        padding: 0;
+
+    }
+    
+    
+    .bg-nav ul{    
+        display:flex; 
+        flex-direction: row;
+        justify-content: space-between;
+    } 
+    
+    
+    
+    
+    
+    .rule{    
+        margin:2rem;
+    }
+    
+    .controls{    
+        padding:2rem;
+    } 
+    
+    .new-content{    
+        display: flex;
+        flex-direction: row;
+        margin: 2rem;
+        text-align: center;
+       
+    }
+    
+    .content
+    {
+        max-width: 60rem;
+        margin: auto;
+    }
+    
+    .new-content img
+    {
+        width: 25rem;
+        
+    }
+    
+    .bg-footer
+    {
+       margin:2rem;  
+    }
+
+    figure
+    {
+        margin:0;
+    }
+}
