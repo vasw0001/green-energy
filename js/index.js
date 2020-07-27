@@ -1,11 +1,11 @@
 
-// get the references to active HTML elements 
+
 
 const btns = document.querySelectorAll('.controls button'); // event target object
 
 const newContent = document.querySelector('.new-content');
 
-// create event handler
+
 
 function addContent(ev){
     
@@ -51,9 +51,6 @@ function addContent(ev){
     
 }
 
- /* 
-    Register all buttons to click event. The event-handler handleSelection will listen 
-    for this event to happen. */  
 
 for(let btn of btns){
   btn.addEventListener('click', addContent);
