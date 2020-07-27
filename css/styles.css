@@ -43,6 +43,8 @@ h1{
     
     font-family: 'Cardo', serif;
     line-height: 1.5;
+    color: #02104D;
+    text-align: center;
     
 }
 
@@ -78,12 +80,6 @@ header {
     background-size: cover;
     background-color: #03538B;
     background-blend-mode: screen;
-}
-
-
-h1 {
-    color: #02104D;
-    text-align: center;
 }
 
 
