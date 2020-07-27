@@ -55,12 +55,12 @@ h4{
 
 /*box class used in all the divs*/
 
-.bg-header .box,
-.bg-footer .box {
+.ge-header .box,
+.ge-footer .box {
     padding: 2rem 2rem;
 }
 
-.bg-main-content .box {
+.main-content .box {
     margin: 2rem;
     padding: 0.5rem;
     color: #666;
@@ -73,7 +73,7 @@ header {
 }
 
 
-.bg-header {
+.ge-header {
     background-image: url(../img/bg-header.png);
     background-repeat: no-repeat;
     -webkit-background-size: cover;
@@ -84,28 +84,28 @@ header {
 
 
 /*nav bar styles */
-.bg-nav ul{    
+.navbar ul{    
     list-style: none;
     padding: 0;
     margin:2rem;
 }
 
-.bg-nav li
+.navbar li
 {
     padding-bottom: 1rem;
 }
 
-.bg-nav ul a:link{    
+.navbar ul a:link{    
     text-decoration: none;
     color:#4287f5;
     
 }
 
-.bg-nav ul a:visited{   
+.navbar ul a:visited{   
     color:#393c40;   
 }
 
-.bg-nav ul a:hover{   
+.navbar ul a:hover{   
     color:#4287f5;    
 }
 
@@ -136,11 +136,11 @@ header {
 
 
 
-.controls{    
+.btncontrols{    
     padding:2.5rem;   
 }
 
-.btn{
+.bc{
     background-color: #03538B; 
     border: none;
   color: white;
@@ -154,27 +154,27 @@ header {
     font-family: 'Josefin Sans', sans-serif; 
 }
 
-.new-content{    
+.js-content{    
     display: flex;
     flex-direction: column;
         
 }
 
-.new-content p
+.js-content p
 {
     margin: 2rem;
     padding: 0.5rem;
     text-align: justify;
 }
 
-.new-content img
+.js-content img
     {
         width: 100%;
         text-align: center;
         
     }
 
-.rule
+.hrline
 {
     margin-left:2rem;
     margin-right: 2rem;
@@ -184,7 +184,7 @@ header {
 
 
 /*footer styles */
-.bg-footer{ 
+.ge-footer{ 
     font-family: 'Cardo', serif;
     display: grid;
     grid-template-rows: auto auto;
@@ -195,11 +195,11 @@ header {
     
 }
 
-.bg-footer ul{    
+.ge-footer ul{    
     list-style: none;    
 }
 
-.bg-footer ul li{    
+.ge-footer ul li{    
     display: inline;
     padding-right: 2.5rem;
     
@@ -222,7 +222,7 @@ header {
         
     }
     
-    .bg-nav ul{        
+    .navbar ul{        
  
         margin: 2rem;       
     }
@@ -234,7 +234,7 @@ header {
     }
     
     
-    .bg-nav ul{    
+    .navbar ul{    
         display:flex; 
         flex-direction: row;
         justify-content: space-between;
@@ -244,15 +244,15 @@ header {
     
     
     
-    .rule{    
+    .hrline{    
         margin:2rem;
     }
     
-    .controls{    
+    .btncontrols{    
         padding:2rem;
     } 
     
-    .new-content{    
+    .js-content{    
         display: flex;
         flex-direction: row;
         margin: 2rem;
@@ -266,13 +266,13 @@ header {
         margin: auto;
     }
     
-    .new-content img
+    .js-content img
     {
         width: 25rem;
         
     }
     
-    .bg-footer
+    .ge-footer
     {
        margin:2rem;  
     }
